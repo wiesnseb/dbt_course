@@ -4,13 +4,13 @@
 
 with child as (
     select customer_id as from_field
-    from dbt.ANALYTICS_DEV.stg_orders
+    from dbt.dbt_swiesner.stg_orders
     where customer_id is not null
 ),
 
 parent as (
     select customer_id as to_field
-    from dbt.ANALYTICS_DEV.stg_customers
+    from dbt.dbt_swiesner.stg_customers
 )
 
 select

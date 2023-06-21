@@ -3,6 +3,6 @@
 select
     order_id,
     sum(amount) as total_amount
-from dbt.ANALYTICS_DEV.stg_payments
+from dbt.dbt_swiesner.stg_payments
 group by 1
 having not(total_amount >= 0)

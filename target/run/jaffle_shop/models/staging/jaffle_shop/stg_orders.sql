@@ -1,5 +1,5 @@
 
-  create or replace   view dbt.ANALYTICS_DEV.stg_orders
+  create or replace   view dbt.dbt_swiesner.stg_orders
   
    as (
     select

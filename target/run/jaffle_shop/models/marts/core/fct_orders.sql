@@ -2,14 +2,13 @@
   
     
 
-        create or replace transient table dbt.ANALYTICS_DEV.fct_orders
-         as
+        create or replace transient table dbt.dbt_swiesner.fct_orders  as
         (with orders as  (
-    select * from dbt.ANALYTICS_DEV.stg_orders
+    select * from dbt.dbt_swiesner.stg_orders
 ),
 
 payments as (
-    select * from dbt.ANALYTICS_DEV.stg_payments
+    select * from dbt.dbt_swiesner.stg_payments
 ),
 
 order_payments as (

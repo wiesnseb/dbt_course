@@ -5,7 +5,7 @@
 
 
 select order_id
-from dbt.ANALYTICS_DEV.stg_orders
+from dbt.dbt_swiesner.stg_orders
 where order_id is null
 
 

@@ -1,9 +1,9 @@
 with orders as  (
-    select * from dbt.ANALYTICS_DEV.stg_orders
+    select * from dbt.dbt_swiesner.stg_orders
 ),
 
 payments as (
-    select * from dbt.ANALYTICS_DEV.stg_payments
+    select * from dbt.dbt_swiesner.stg_payments
 ),
 
 order_payments as (

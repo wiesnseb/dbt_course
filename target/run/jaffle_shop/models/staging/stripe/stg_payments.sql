@@ -1,5 +1,5 @@
 
-  create or replace   view dbt.ANALYTICS_DEV.stg_payments
+  create or replace   view dbt.dbt_swiesner.stg_payments
   
    as (
     with payments as (

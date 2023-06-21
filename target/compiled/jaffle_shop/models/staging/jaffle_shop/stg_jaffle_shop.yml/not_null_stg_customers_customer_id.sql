@@ -5,7 +5,7 @@
 
 
 select customer_id
-from dbt.ANALYTICS_DEV.stg_customers
+from dbt.dbt_swiesner.stg_customers
 where customer_id is null
 
 

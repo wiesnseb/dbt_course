@@ -8,7 +8,7 @@ with all_values as (
         status as value_field,
         count(*) as n_records
 
-    from dbt.ANALYTICS_DEV.stg_orders
+    from dbt.dbt_swiesner.stg_orders
     group by status
 
 )

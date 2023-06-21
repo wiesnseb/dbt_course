@@ -1,8 +1,8 @@
 with customers as (
-    select * from dbt.ANALYTICS_DEV.stg_customers
+    select * from dbt.dbt_swiesner.stg_customers
 ),
 orders as (
-    select * from dbt.ANALYTICS_DEV.fct_orders
+    select * from dbt.dbt_swiesner.fct_orders
 ),
 customer_orders as (
     select
@@ -22,7 +22,9 @@ final as (
         customer_orders.first_order_date,
         customer_orders.most_recent_order_date,
         coalesce(customer_orders.number_of_orders, 0) as number_of_orders,
-        customer_orders.lifetime_value
+        customer_orders.lifetime_value,
+        customer_orders.lifetime_value*10 as lifetime_10
+
     from customers
     left join customer_orders using (customer_id)
 )

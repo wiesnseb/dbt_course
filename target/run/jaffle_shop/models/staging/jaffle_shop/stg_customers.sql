@@ -1,5 +1,5 @@
 
-  create or replace   view dbt.ANALYTICS_DEV.stg_customers
+  create or replace   view dbt.dbt_swiesner.stg_customers
   
    as (
     with customers as (
